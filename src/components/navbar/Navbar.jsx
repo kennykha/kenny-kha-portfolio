@@ -13,7 +13,7 @@ export default function Navbar({menuOpen, handleMenuOpen}) {
                     </div>
                 </div>
                 <div className="right">
-                    <div className="menu" onClick={() => handleMenuOpen(!menuOpen)}>
+                    <div className="menuIcon" onClick={() => handleMenuOpen()}>
                         <span className="line1"></span>
                         <span className="line2"></span>
                         <span className="line3"></span>
