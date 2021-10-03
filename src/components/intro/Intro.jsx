@@ -1,4 +1,6 @@
 import "./intro.scss";
+import GitHub from '@mui/icons-material/GitHub';
+import LinkedIn from '@mui/icons-material/LinkedIn';
 
 export default function Intro() {
     return (
@@ -13,6 +15,16 @@ export default function Intro() {
                     <h2>Hello, my name is</h2>
                     <h1 className="name">Kenny Kha</h1>
                     <h3>Full-stack Javascript Developer</h3>
+                </div>
+                <div className='introContacts'>
+                    <a className="introContactItem" href="https://www.linkedin.com/in/kennykha" target="_blank" rel='noreferrer'>
+                        <div>LinkedIn</div>
+                        <LinkedIn className="icon"/>
+                    </a>
+                    <a className="introContactItem" href="https://github.com/kennykha" target="_blank" rel='noreferrer'>
+                    <div>GitHub</div>
+                        <GitHub className="icon"/>
+                    </a>
                 </div>
             </div>
         </div>
