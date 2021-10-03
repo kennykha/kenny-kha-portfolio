@@ -62,5 +62,21 @@
         }
       }
     }
+
+    .arrowIcon {
+      transform: rotate(90deg);
+      position: absolute;
+      bottom: 10px;
+      height: 100px;
+      width: 100px;
+      color: $mainColor;
+      animation: blink 2s infinite;
+    }
+
+    @keyframes blink {
+      100% {
+        opacity: 0;
+      }
+    }
   }
 }

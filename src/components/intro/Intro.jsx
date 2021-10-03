@@ -1,6 +1,7 @@
 import "./intro.scss";
 import GitHub from '@mui/icons-material/GitHub';
 import LinkedIn from '@mui/icons-material/LinkedIn';
+import Arrow from '@mui/icons-material/DoubleArrow';
 
 export default function Intro() {
     return (
@@ -26,6 +27,9 @@ export default function Intro() {
                         <GitHub className="icon"/>
                     </a>
                 </div>
+                <a href="#projects">
+                    <Arrow className="arrowIcon" />
+                </a>
             </div>
         </div>
     )
