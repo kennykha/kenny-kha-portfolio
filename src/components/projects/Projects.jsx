@@ -1,12 +1,19 @@
 import "./projects.scss";
 import GitHub from '@mui/icons-material/GitHub';
 import Arrow from '@mui/icons-material/ArrowForwardIos';
+import { useState } from 'react';
 
 export default function Projects() {
+    const [currentProject, handleCurrentProject] = useState(0);
+    const changeProject = (direction) => {
+        direction === "left" ? handleCurrentProject(currentProject > 0 ? currentProject - 1 : 2) :
+        handleCurrentProject(currentProject < data.length - 1 ? currentProject + 1 : 0);
+    }
+
     return (
         <div className="projects" id="projects">
             <div className="name">Projects</div>
-            <div className="carousel">
+            <div className="carousel" style={{transform: `translateX(-${currentProject * 100}vw)`}}>
                 {data.map(project => (
                 <div className="container">
                     <div className="project">
@@ -24,8 +31,8 @@ export default function Projects() {
                     </div>
                 </div>))}
             </div>
-            <Arrow className="arrow left" />
-            <Arrow className="arrow right" />
+            <Arrow className="arrow left" onClick={() => changeProject('left')}/>
+            <Arrow className="arrow right" onClick={() => changeProject('right')}/>
         </div>
     )
 }
