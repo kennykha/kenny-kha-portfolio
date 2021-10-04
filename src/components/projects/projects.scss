@@ -7,17 +7,32 @@
   justify-content: center;
   position: relative;
 
+  .arrow {
+    font-size: 50px;
+    position: relative;
+    color: white;
+
+    &.left {
+      left: -500px;
+      transform: rotate(180deg);
+    }
+
+    &.right {
+      left: 500px;
+    }
+  }
+
   .name {
     position: absolute;
     top: 0;
-    margin-top: 50px;
+    margin-top: 200px;
     font-size: 40px;
     letter-spacing: 5px;
     color: white;
   }
 
   .carousel {
-    height: 500px;
+    height: 400px;
     display: flex;
     position: absolute;
     left: 0;
@@ -77,8 +92,8 @@
           flex: 8;
 
           img {
-            height: 95%;
-            width: 95%;
+            height: 80%;
+            width: 80%;
           }
         }
       }
