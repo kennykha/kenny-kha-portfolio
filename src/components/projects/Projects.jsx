@@ -12,7 +12,7 @@ export default function Projects() {
 
     return (
         <div className="projects" id="projects">
-            <div className="name">Kenny</div>
+            <div className="name">Projects</div>
             <div className="carousel" style={{transform: `translateX(-${currentProject * 100}vw)`}}>
                 {data.map(project => (
                 <div className="container">
